@@ -17,12 +17,12 @@ public class laba4 {
                 default:
                     System.out.println("task " + num + " is not exist");
                     break;
-                case 1:
+                /*case 1:
                     System.out.print("\n Input a string: ");
                     String str = in.next();
 
                     System.out.println("amebas: " + x);
-                    break;
+                    break;*/
                 case 2:
                     System.out.print("\n Input a value (): ");
                     int y = in.nextInt();

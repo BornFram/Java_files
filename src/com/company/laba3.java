@@ -18,12 +18,12 @@ public class laba3 { //var17
                     System.out.println("task " + num + " is not exist");
                     break;
                 case 1:
-                    System.out.print("\n Input a value (hour): ");
-                    int hour = in.nextInt(); long amebas = 1;
-                    for (int i=1; i < hour; i++){
-                        if (i % 3 == 0) {amebas*=2;}
+                    System.out.println("\n Input a value (hour): ");
+                    int hour = 25/*in.nextInt()*/; long amebas = 1;
+                    for (int i=1; i < hour; i+=3){
+                        amebas*=2;
+                        System.out.println("amebas: " + amebas);
                     }
-                    System.out.println("amebas: " + amebas);
                     break;
                 case 2:
                     System.out.print("\n Input a value (N): ");

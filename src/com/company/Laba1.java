@@ -21,18 +21,18 @@ public class Laba1 {
                 case 1:
                     System.out.print("\n Input a value (z): ");
                     int z = in.nextInt();
-                    System.out.println(((4*z-4)^2)/(4-8*z+8*z^2));
+                    System.out.println(((4*z-4)*(4*z-4))/(4-8*z+8*z*z));
                     break;
                 case 2:
                     System.out.print("\n Input a value (x): ");
                     int x = in.nextInt();
-                    System.out.println(Math.log10(x^2)/(1 + Math.log10(x)*Math.log10(x)));
+                    System.out.println(Math.log10(x*2)/(1 + Math.log10(x)*Math.log10(x)));
                     break;
                 case 3:
                     System.out.print("\n Input a value (x): ");
                     x = in.nextInt();
-                    System.out.println(-2*x+3*x^2-4*x^3);
-                    System.out.println(1+2*x+3*x^2+4*x^3);
+                    System.out.println(-2*x+3*x*x-4*x*x*x);
+                    System.out.println(1+2*x+3*x*x+4*x*x*x);
                     break;
 
             }

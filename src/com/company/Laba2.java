@@ -26,9 +26,10 @@ public class Laba2 { //var17
                     System.out.println(x>3? (1.2*x*x-3*x-9) : ((12.1)/(2*x*x+1)));
                     break;
                 case 2:
-                    System.out.print("\n Input a values (m n p): ");
+                    System.out.print("\n Input a values (m,n,p): ");
                     String str1 = in.next();
-                    String str[] = str1.trim().split(" ");
+                    String str[] = str1.trim().split(",");
+                    //System.out.println(str[0] +" "+ str[1] +" "+ str[2]);
                     float values[] = new float[3]; int count = 0;
                     for(int i=0; i < 3; i++) {
                         values[i] = Float.parseFloat(str[i]);
@@ -37,8 +38,8 @@ public class Laba2 { //var17
                     System.out.println("output " + count);
                     break;
                 case 3:
-                    System.out.print("\n Input a values (A B): ");
-                    String[] str3 = in.next().trim().split(" ");
+                    System.out.print("\n Input a values (A,B): ");
+                    String[] str3 = in.next().trim().split(",");
                     int[] numbs = {Integer.parseInt(str3[0]), Integer.parseInt(str3[1])};
                     System.out.println(numbs[0]+numbs[1] > 32767? ("overflow") : (numbs[0]+numbs[1]));
                     break;
